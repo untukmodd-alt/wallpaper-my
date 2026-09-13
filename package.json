@@ -1,0 +1,15 @@
+{
+  "name": "wallpaper-my",
+  "version": "1.0.0",
+  "description": "Wallpaper My - APK",
+  "scripts": {},
+  "dependencies": {
+    "@capacitor/core": "^6.1.0",
+    "@capacitor/android": "^6.1.0",
+    "@capgo/capacitor-share-target": "^6.0.0",
+    "capacitor-wallpaper": "^1.0.6"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.1.0"
+  }
+}

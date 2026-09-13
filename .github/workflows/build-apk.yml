@@ -59,6 +59,12 @@ jobs:
               f.write(content)
           EOF
 
+      - name: Upgrade Gradle wrapper (hindari bug bcprov-jdk18on di Gradle 8.2.1)
+        run: |
+          cd android
+          sed -i 's/gradle-8\.2\.1-all\.zip/gradle-8.9-all.zip/' gradle/wrapper/gradle-wrapper.properties
+          cat gradle/wrapper/gradle-wrapper.properties
+
       - name: Build APK (debug)
         run: |
           cd android
